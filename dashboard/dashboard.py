@@ -3,6 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 data1_dir= os.path.dirname(os.path.realpath(file))
 data1 =  pd.read_csv(f"{data1_dir}/main_data1.csv")
