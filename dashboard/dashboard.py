@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-data1_dir= os.path.dirname(os.path.realpath(file))
+data1_dir= os.path.dirname(os.path.realpath(__file__))
 data1 =  pd.read_csv(f"{data1_dir}/main_data1.csv")
 
-data2_dir= os.path.dirname(os.path.realpath(file))
+data2_dir= os.path.dirname(os.path.realpath(__file__))
 data2 =  pd.read_csv(f"{data2_dir}/main_data2.csv")
 
 
