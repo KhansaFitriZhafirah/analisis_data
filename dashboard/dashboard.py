@@ -4,8 +4,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-data1 = pd.read_csv('main_data1.csv')  
-data2 = pd.read_csv('main_data2.csv')  
+data1_dir= os.path.dirname(os.path.realpath(file))
+data1 =  pd.read_csv(f"{data1_dir}/main_data1.csv")
+
+data2_dir= os.path.dirname(os.path.realpath(file))
+data2 =  pd.read_csv(f"{data2_dir}/main_data2.csv")
 
 
 st.title("Analisis Penyewaan Sepeda")
